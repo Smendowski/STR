@@ -1,4 +1,4 @@
-"""EWC: Elastic Weight Consolidation — regularisation-based CL strategy."""
+"""EWC: Elastic Weight Consolidation - regularisation-based CL strategy."""
 import copy
 
 import torch

@@ -33,7 +33,7 @@ class WarmupBetaVariationalMSELoss(nn.Module):
     warmup". Subclass with target_beta < 1.0 for "β-VAE with warmup".
 
     The training loop must update `current_epoch` between epochs (see
-    BaseTrainingRegime — adapter accommodates losses with that attribute).
+    BaseTrainingRegime - adapter accommodates losses with that attribute).
     """
 
     def __init__(self, reduction: str = "mean",

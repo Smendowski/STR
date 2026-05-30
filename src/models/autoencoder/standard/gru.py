@@ -49,8 +49,8 @@ class GRUDecoder(nn.Module):
         batch = latent.size(0)
 
         # Feed the latent at every decoder timestep instead of zeros.
-        # The latent already has shape (batch, input_size) — exactly what the
-        # first decoder GRU expects as input — so expand directly.
+        # The latent already has shape (batch, input_size) - exactly what the
+        # first decoder GRU expects as input - so expand directly.
         # hidden_proj is still used for the initial hidden state (different size).
         # This gives weight_ih_l0 real gradients; with zero input those weights
         # were permanently dead (confirmed in tests).

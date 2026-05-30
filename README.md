@@ -1,4 +1,4 @@
-# STR — Selective Temporal Replay
+# STR - Selective Temporal Replay
 
 Code and results accompanying the paper **"Bridging Continual Learning and Green Cloud Computing: Foundations for Sustainable Time Series Anomaly Detection"**.
 
@@ -57,7 +57,7 @@ All commands below assume `pdm run` prefixes, which resolves to the project virt
 | Yahoo!~A1, A2, A3, A4 | `data/raw/yahoo/` (CSV per series) | `data/consolidated/yahoo_a{1..4}.parquet` |
 | SMD | `data/raw/smd/` (machine-{1,2,3}-{1..N}.txt) | `data/raw/smd/` (no consolidation step) |
 
-### Yahoo — consolidation step (one-time)
+### Yahoo - consolidation step (one-time)
 
 Yahoo benchmarks ship as one CSV per series. The runner reads pre-consolidated parquet:
 
@@ -67,13 +67,13 @@ pdm run jupyter notebook notebooks/Yahoo-data-consolidation.ipynb
 
 Execute all cells once to (re)generate `data/consolidated/yahoo_a{1..4}.parquet`. The parquet files are already in this repo, so this step is only needed if you re-extract the raw data or change the consolidation logic.
 
-### SMD — used as-is
+### SMD - used as-is
 
 SMD is multivariate (38 features) and read directly from `data/raw/smd/`. No consolidation needed.
 
 ## 4. Running experiments
 
-There are two runners — one per benchmark family. Both are crash-safe (CSV is written after every run), resumable (`--resume`), and lightweight (~10 KB per run, no model weights persisted).
+There are two runners - one per benchmark family. Both are crash-safe (CSV is written after every run), resumable (`--resume`), and lightweight (~10 KB per run, no model weights persisted).
 
 | Runner | Benchmarks | Uses `scenarios/`? |
 |--------|------------|--------------------|
@@ -83,7 +83,7 @@ There are two runners — one per benchmark family. Both are crash-safe (CSV is 
 ### Yahoo runner
 
 ```bash
-# Yahoo A1 — full grid (10 strategies × 9 architectures × OFAT configs)
+# Yahoo A1 - full grid (10 strategies × 9 architectures × OFAT configs)
 pdm run python scripts/run_experiments_yahoo.py --dataset yahoo-a1
 
 # inspect the planned grid without running anything
@@ -102,15 +102,15 @@ pdm run python scripts/run_experiments_yahoo.py --dataset yahoo-a4
 SMD partitions the 28 machines into 5 sequential concepts (cluster-based, domain-incremental):
 
 ```
-C1 — cluster1 top-4   (1-6, 1-7, 1-1, 1-3)
-C2 — cluster1 other-4 (1-2, 1-4, 1-5, 1-8)
-C3 — cluster2 top-4   (2-2, 2-4, 2-9, 2-1)
-C4 — cluster2 other-4 (2-5, 2-7, 2-6, 2-3)
-C5 — cluster3 top-4   (3-8, 3-2, 3-10, 3-6)
+C1 - cluster1 top-4   (1-6, 1-7, 1-1, 1-3)
+C2 - cluster1 other-4 (1-2, 1-4, 1-5, 1-8)
+C3 - cluster2 top-4   (2-2, 2-4, 2-9, 2-1)
+C4 - cluster2 other-4 (2-5, 2-7, 2-6, 2-3)
+C5 - cluster3 top-4   (3-8, 3-2, 3-10, 3-6)
 ```
 
 ```bash
-# SMD — full grid
+# SMD - full grid
 pdm run python scripts/run_experiments_smd.py
 
 # dry-run / resume / single architecture / sanity-limit first N
@@ -122,7 +122,7 @@ pdm run python scripts/run_experiments_smd.py --limit 5
 
 ## 5. Experiment outputs
 
-All runs land under `experiments/{benchmark}/`. The directory already contains the results used in the paper — re-running overwrites or appends via `--resume`.
+All runs land under `experiments/{benchmark}/`. The directory already contains the results used in the paper - re-running overwrites or appends via `--resume`.
 
 | Path | Size | Role |
 |------|------|------|
@@ -137,7 +137,7 @@ All runs land under `experiments/{benchmark}/`. The directory already contains t
 
 ```
 experiments/{benchmark}/
-├── summary.csv                One row per run — all metrics, configs, CO₂
+├── summary.csv                One row per run - all metrics, configs, CO₂
 ├── multiseed_summary.csv      (yahoo-a1, smd) extra seeds for headline cells
 ├── fwt.csv                    Forward-transfer values (recomputed)
 └── {arch}/{run_id}/
@@ -150,4 +150,4 @@ experiments/{benchmark}/
 
 ## 6. License
 
-MIT — see [`LICENSE`](LICENSE).
+MIT - see [`LICENSE`](LICENSE).

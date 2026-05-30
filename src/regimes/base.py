@@ -349,7 +349,7 @@ class BaseTrainingRegime:
                     concept_loss += _reconstruction_error
 
                     # Anomaly score: sum reconstruction error over features so we
-                    # get one score per timestep — required for multivariate data
+                    # get one score per timestep - required for multivariate data
                     # where n_features > 1.  For univariate (n_features=1) the sum
                     # is a no-op.  Shape: (batch, seq_len, n_features) → (batch*seq_len,)
                     unfolded_reconstruction_error = (
@@ -458,7 +458,7 @@ class BaseTrainingRegime:
         # so the number of distinct raw timesteps covered is that + 1.
         L = (n_windows - 1) * test_step + s
 
-        # Global accumulators — one (score, label) pair per raw timestep,
+        # Global accumulators - one (score, label) pair per raw timestep,
         # across all time series in this test concept. Three aggregation
         # variants, following TadGAN (Geiger et al., IEEE BigData 2020) which
         # uses median; we also report mean (most common) and max (most

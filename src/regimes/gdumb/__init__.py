@@ -18,11 +18,11 @@ class GDumbRegime(ReplayBaseRegime):
             x = x.cpu()
 
             if len(self.replay_buffer) < self.buffer_size:
-                # Buffer not full — admit directly
+                # Buffer not full - admit directly
                 self.replay_buffer.append({"x": x, "concept": concept_idx})
                 n_admitted += 1
             else:
-                # Buffer full — find the concept with the most entries (largest)
+                # Buffer full - find the concept with the most entries (largest)
                 concept_counts = Counter(
                     e.get("concept", 0) for e in self.replay_buffer
                 )
