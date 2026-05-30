@@ -1,0 +1,16 @@
+{
+  "dataset": "yahoo-a1",
+  "arch": "vgru-kl",
+  "regime": "strb",
+  "run_id": "r-strb_sl12_st12_sp336_bu50_no0.2_re0.9_re0.9",
+  "seq_len": 12,
+  "stride": 12,
+  "split_size": 336,
+  "buffer_size": 50,
+  "novelty_threshold": 0.2,
+  "retention_threshold": 0.9,
+  "replay_ratio": 0.9,
+  "alpha": NaN,
+  "temperature": NaN,
+  "orig_final_avg_auc": 0.8419149399496133
+}

@@ -1,0 +1,13 @@
+{
+  "regime": "lwf",
+  "seq_len": 24,
+  "stride": 12,
+  "block": "B1",
+  "alpha": 2.0,
+  "temperature": 2.0,
+  "buffer_size": null,
+  "novelty_threshold": null,
+  "retention_threshold": null,
+  "replay_ratio": null,
+  "lambda_ewc": null
+}

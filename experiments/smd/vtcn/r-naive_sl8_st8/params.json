@@ -1,0 +1,13 @@
+{
+  "regime": "naive",
+  "seq_len": 8,
+  "stride": 8,
+  "block": "B2",
+  "buffer_size": null,
+  "novelty_threshold": null,
+  "retention_threshold": null,
+  "replay_ratio": null,
+  "lambda_ewc": null,
+  "alpha": null,
+  "temperature": null
+}

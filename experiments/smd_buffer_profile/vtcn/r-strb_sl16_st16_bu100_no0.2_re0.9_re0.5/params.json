@@ -1,0 +1,14 @@
+{
+  "arch": "vtcn",
+  "regime": "strb",
+  "run_id": "r-strb_sl16_st16_bu100_no0.2_re0.9_re0.5",
+  "seq_len": 16,
+  "stride": 16,
+  "buffer_size": 100,
+  "novelty_threshold": 0.2,
+  "retention_threshold": 0.9,
+  "replay_ratio": 0.5,
+  "alpha": NaN,
+  "temperature": NaN,
+  "orig_final_avg_auc": 0.6979489111517486
+}

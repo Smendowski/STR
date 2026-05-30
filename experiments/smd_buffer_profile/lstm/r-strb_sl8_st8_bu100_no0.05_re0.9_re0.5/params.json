@@ -1,0 +1,14 @@
+{
+  "arch": "lstm",
+  "regime": "strb",
+  "run_id": "r-strb_sl8_st8_bu100_no0.05_re0.9_re0.5",
+  "seq_len": 8,
+  "stride": 8,
+  "buffer_size": 100,
+  "novelty_threshold": 0.05,
+  "retention_threshold": 0.9,
+  "replay_ratio": 0.5,
+  "alpha": NaN,
+  "temperature": NaN,
+  "orig_final_avg_auc": 0.7728591229570003
+}

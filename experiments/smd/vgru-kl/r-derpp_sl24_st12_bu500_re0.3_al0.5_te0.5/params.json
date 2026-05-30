@@ -1,0 +1,13 @@
+{
+  "regime": "derpp",
+  "seq_len": 24,
+  "stride": 12,
+  "block": "B1",
+  "buffer_size": 500,
+  "replay_ratio": 0.3,
+  "alpha": 0.5,
+  "temperature": 0.5,
+  "novelty_threshold": null,
+  "retention_threshold": null,
+  "lambda_ewc": null
+}

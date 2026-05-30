@@ -1,0 +1,14 @@
+{
+  "regime": "cumulative",
+  "seq_len": 24,
+  "stride": 12,
+  "split_size": 336,
+  "block": "B3",
+  "buffer_size": null,
+  "novelty_threshold": null,
+  "retention_threshold": null,
+  "replay_ratio": null,
+  "lambda_ewc": null,
+  "alpha": null,
+  "temperature": null
+}

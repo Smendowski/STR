@@ -1,0 +1,16 @@
+{
+  "dataset": "yahoo-a1",
+  "arch": "tcn",
+  "regime": "strb",
+  "run_id": "r-strb_sl6_st6_sp336_bu50_no0.2_re0.9_re0.5",
+  "seq_len": 6,
+  "stride": 6,
+  "split_size": 336,
+  "buffer_size": 50,
+  "novelty_threshold": 0.2,
+  "retention_threshold": 0.9,
+  "replay_ratio": 0.5,
+  "alpha": NaN,
+  "temperature": NaN,
+  "orig_final_avg_auc": 0.7226486961276766
+}

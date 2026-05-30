@@ -1,0 +1,13 @@
+{
+  "regime": "gdumb",
+  "seq_len": 24,
+  "stride": 12,
+  "block": "B1",
+  "buffer_size": 4000,
+  "replay_ratio": 0.5,
+  "novelty_threshold": null,
+  "retention_threshold": null,
+  "lambda_ewc": null,
+  "alpha": null,
+  "temperature": null
+}

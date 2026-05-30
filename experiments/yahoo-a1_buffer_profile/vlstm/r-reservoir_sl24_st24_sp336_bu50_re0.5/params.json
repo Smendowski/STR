@@ -1,0 +1,16 @@
+{
+  "dataset": "yahoo-a1",
+  "arch": "vlstm",
+  "regime": "reservoir",
+  "run_id": "r-reservoir_sl24_st24_sp336_bu50_re0.5",
+  "seq_len": 24,
+  "stride": 24,
+  "split_size": 336,
+  "buffer_size": 50,
+  "novelty_threshold": NaN,
+  "retention_threshold": NaN,
+  "replay_ratio": 0.5,
+  "alpha": NaN,
+  "temperature": NaN,
+  "orig_final_avg_auc": 0.8985318696265193
+}

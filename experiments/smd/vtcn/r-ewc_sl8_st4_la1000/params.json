@@ -1,0 +1,13 @@
+{
+  "regime": "ewc",
+  "seq_len": 8,
+  "stride": 4,
+  "block": "B3",
+  "lambda_ewc": 1000.0,
+  "buffer_size": null,
+  "novelty_threshold": null,
+  "retention_threshold": null,
+  "replay_ratio": null,
+  "alpha": null,
+  "temperature": null
+}

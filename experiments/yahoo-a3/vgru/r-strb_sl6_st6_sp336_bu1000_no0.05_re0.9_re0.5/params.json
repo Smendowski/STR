@@ -1,0 +1,14 @@
+{
+  "regime": "strb",
+  "seq_len": 6,
+  "stride": 6,
+  "split_size": 336,
+  "block": "B4",
+  "buffer_size": 1000,
+  "novelty_threshold": 0.05,
+  "retention_threshold": 0.9,
+  "replay_ratio": 0.5,
+  "lambda_ewc": null,
+  "alpha": null,
+  "temperature": null
+}

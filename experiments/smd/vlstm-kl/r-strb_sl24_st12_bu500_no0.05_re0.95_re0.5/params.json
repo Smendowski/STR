@@ -1,0 +1,13 @@
+{
+  "regime": "strb",
+  "seq_len": 24,
+  "stride": 12,
+  "block": "B6",
+  "buffer_size": 500,
+  "novelty_threshold": 0.05,
+  "retention_threshold": 0.95,
+  "replay_ratio": 0.5,
+  "lambda_ewc": null,
+  "alpha": null,
+  "temperature": null
+}

@@ -1,0 +1,14 @@
+{
+  "regime": "reservoir",
+  "seq_len": 12,
+  "stride": 12,
+  "split_size": 168,
+  "block": "B7",
+  "buffer_size": 50,
+  "replay_ratio": null,
+  "novelty_threshold": null,
+  "retention_threshold": null,
+  "lambda_ewc": null,
+  "alpha": null,
+  "temperature": null
+}

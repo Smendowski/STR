@@ -1,0 +1,14 @@
+{
+  "regime": "gdumb",
+  "seq_len": 12,
+  "stride": 12,
+  "split_size": 336,
+  "block": "B1",
+  "buffer_size": 50,
+  "replay_ratio": 0.3,
+  "novelty_threshold": null,
+  "retention_threshold": null,
+  "lambda_ewc": null,
+  "alpha": null,
+  "temperature": null
+}

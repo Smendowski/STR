@@ -1,0 +1,14 @@
+{
+  "arch": "lstm",
+  "regime": "reservoir",
+  "run_id": "r-reservoir_sl24_st12_bu100_re0.5",
+  "seq_len": 24,
+  "stride": 12,
+  "buffer_size": 100,
+  "novelty_threshold": NaN,
+  "retention_threshold": NaN,
+  "replay_ratio": 0.5,
+  "alpha": NaN,
+  "temperature": NaN,
+  "orig_final_avg_auc": 0.7336074057854585
+}
