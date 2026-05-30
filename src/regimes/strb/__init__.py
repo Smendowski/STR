@@ -176,7 +176,7 @@ class STRBRegime(ReplayBaseRegime):
             )
             return
 
-        # ── STEP 5 (concepts 1+): selective replacement with recency weighting ──
+        # STEP 5 (concepts 1+): selective replacement with recency weighting
         # For each new candidate (passing novelty filter), pick a replaceable
         # buffer slot weighted by recency (admission_concept + 1 - newer = higher
         # weight = more likely replaced); replace if novelty > 1 - retention.
